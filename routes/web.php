@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// List articles endpoint
+Route::get('articles', 'ArticlesController@index');
+
+// List a single article endpoint
+Route::get('article/{id}', 'ArticleController@show');
+
+// Create a new article endpoint
+Route::post('article', 'ArticleController@store');
+
+// Update article endpoint
+Route::put('articles', 'ArticleController@store');
+
+// Delete article endpoint
+Route::delete('articles', 'ArticleController@destroy');
