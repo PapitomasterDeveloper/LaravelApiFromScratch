@@ -20,3 +20,146 @@
 #17 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #18 {main}
 "} 
+[2019-05-07 17:52:43] local.ERROR: Command "make:migrationls" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migrationls\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php:639)
+[stacktrace]
+#0 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php(233): Symfony\\Component\\Console\\Application->find('make:migrationl...')
+#1 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2019-05-07 18:15:14] local.ERROR: Unable to locate factory with name [default] [App\Article]. {"exception":"[object] (InvalidArgumentException(code: 0): Unable to locate factory with name [default] [App\\Article]. at /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php:269)
+[stacktrace]
+#0 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(292): Illuminate\\Database\\Eloquent\\FactoryBuilder->getRawAttributes(Array)
+#1 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(116): Illuminate\\Database\\Eloquent\\FactoryBuilder->Illuminate\\Database\\Eloquent\\{closure}()
+#2 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(300): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#3 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(229): Illuminate\\Database\\Eloquent\\FactoryBuilder->makeInstance(Array)
+#4 [internal function]: Illuminate\\Database\\Eloquent\\FactoryBuilder->Illuminate\\Database\\Eloquent\\{closure}(1)
+#5 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(230): array_map(Object(Closure), Array)
+#6 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(178): Illuminate\\Database\\Eloquent\\FactoryBuilder->make(Array)
+#7 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/database/seeds/ArticlesTableSeeder.php(15): Illuminate\\Database\\Eloquent\\FactoryBuilder->create()
+#8 [internal function]: ArticlesTableSeeder->run()
+#9 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#10 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(122): Illuminate\\Container\\Container->call(Array)
+#14 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(42): Illuminate\\Database\\Seeder->__invoke()
+#15 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/database/seeds/DatabaseSeeder.php(15): Illuminate\\Database\\Seeder->call('ArticlesTableSe...')
+#16 [internal function]: DatabaseSeeder->run()
+#17 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#18 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#20 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#21 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(122): Illuminate\\Container\\Container->call(Array)
+#22 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(63): Illuminate\\Database\\Seeder->__invoke()
+#23 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(122): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#24 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(64): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#25 [internal function]: Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#26 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#27 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#28 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#29 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#30 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#31 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#32 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#33 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#38 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#39 {main}
+"} 
+[2019-05-07 18:16:38] local.ERROR: Unable to locate factory with name [default] [App\Article]. {"exception":"[object] (InvalidArgumentException(code: 0): Unable to locate factory with name [default] [App\\Article]. at /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php:269)
+[stacktrace]
+#0 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(292): Illuminate\\Database\\Eloquent\\FactoryBuilder->getRawAttributes(Array)
+#1 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(116): Illuminate\\Database\\Eloquent\\FactoryBuilder->Illuminate\\Database\\Eloquent\\{closure}()
+#2 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(300): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#3 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(229): Illuminate\\Database\\Eloquent\\FactoryBuilder->makeInstance(Array)
+#4 [internal function]: Illuminate\\Database\\Eloquent\\FactoryBuilder->Illuminate\\Database\\Eloquent\\{closure}(1)
+#5 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(230): array_map(Object(Closure), Array)
+#6 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php(178): Illuminate\\Database\\Eloquent\\FactoryBuilder->make(Array)
+#7 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/database/seeds/ArticlesTableSeeder.php(15): Illuminate\\Database\\Eloquent\\FactoryBuilder->create()
+#8 [internal function]: ArticlesTableSeeder->run()
+#9 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#10 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#12 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#13 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(122): Illuminate\\Container\\Container->call(Array)
+#14 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(42): Illuminate\\Database\\Seeder->__invoke()
+#15 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/database/seeds/DatabaseSeeder.php(15): Illuminate\\Database\\Seeder->call('ArticlesTableSe...')
+#16 [internal function]: DatabaseSeeder->run()
+#17 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#18 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#19 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#20 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#21 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(122): Illuminate\\Container\\Container->call(Array)
+#22 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(63): Illuminate\\Database\\Seeder->__invoke()
+#23 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(122): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#24 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(64): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#25 [internal function]: Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#26 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#27 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#28 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#29 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#30 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#31 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#32 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#33 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php(908): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php(269): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#37 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#38 /home/miguel/Desktop/Github/PHP/Laravel/api_scratch/laravel-articles/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#39 {main}
+"} 
