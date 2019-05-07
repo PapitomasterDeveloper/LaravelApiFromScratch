@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 // List articles endpoint
-Route::get('articles', 'ArticlesController@index');
+Route::get('articles', 'ArticleController@index');
 
 // List a single article endpoint
 Route::get('article/{id}', 'ArticleController@show');
@@ -25,7 +25,7 @@ Route::get('article/{id}', 'ArticleController@show');
 Route::post('article', 'ArticleController@store');
 
 // Update article endpoint
-Route::put('articles', 'ArticleController@store');
+Route::put('article', 'ArticleController@store');
 
 // Delete article endpoint
-Route::delete('articles', 'ArticleController@destroy');
+Route::delete('article/{id}', 'ArticleController@destroy');
